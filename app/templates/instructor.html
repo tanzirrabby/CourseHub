@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Instructor Dashboard</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Instructor Dashboard</h1>
+    <section class="card">
+      <h2>Create course</h2>
+      <form id="course-form">
+        <input name="title" placeholder="Course title" required />
+        <textarea name="description" placeholder="Description" required></textarea>
+        <button type="submit">Create</button>
+      </form>
+    </section>
+    <section class="card">
+      <h2>My courses</h2>
+      <ul id="course-list"></ul>
+    </section>
+    <p><a href="/">Back to auth</a></p>
+  </main>
+  <script src="/static/instructor.js"></script>
+</body>
+</html>
