@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>CourseHub LMS</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>CourseHub LMS</h1>
+    <p>JWT-secured learning management system with role-based dashboards.</p>
+
+    <section class="card">
+      <h2>Register</h2>
+      <form id="register-form">
+        <input name="full_name" placeholder="Full name" required />
+        <input name="email" type="email" placeholder="Email" required />
+        <input name="password" type="password" placeholder="Password" required />
+        <select name="role" required>
+          <option value="student">Student</option>
+          <option value="instructor">Instructor</option>
+        </select>
+        <button type="submit">Create account</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Login</h2>
+      <form id="login-form">
+        <input name="username" type="email" placeholder="Email" required />
+        <input name="password" type="password" placeholder="Password" required />
+        <button type="submit">Sign in</button>
+      </form>
+    </section>
+
+    <p id="status"></p>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
